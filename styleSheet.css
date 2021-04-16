@@ -1,11 +1,11 @@
 
-.topnav {
+.topnav1 {
   overflow: hidden;
   background-color: #3DC1D3;
   color:white;
   opacity: 0.8;
 }
-.topnav a {
+.topnav1 a {
   float: left;
   display: block;
   color: white;
@@ -14,12 +14,12 @@
   text-decoration: none;
   font-size: 17px;
 }
-.topnav a:hover {
+.topnav1 a:hover {
   background-color: #ddd;
   
 }
 
-.topnav .search-container button {
+.topnav1 .search-container1 button {
   float: right;
   padding: 6px 10px;
   margin-top: 10px;
@@ -30,11 +30,11 @@
   cursor: pointer;
   	
 }
-.topnav .search-container button:hover {
+.topnav1 .search-container1 button:hover {
   background: #ccc;
 }
 
-#input{
+#input1{
 	
   position: absolute;
   top:22px;

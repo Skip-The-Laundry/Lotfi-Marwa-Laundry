@@ -48,4 +48,6 @@ $('input').on("click",function(){
 	machineCapacity = $("input[name='capacity']:checked" ).val();
 	console.log(machineCapacity)
 	console.log(clothesType)
+	console.log(detergent)
+
 })
