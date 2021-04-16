@@ -35,19 +35,53 @@ $("#goBack").click(function(){
 //     position = $("#position").val();
 //     dropOffDate = $("#dropOff1").val();
 // }
-var clothesType;
-var detergentType;
-var machineCapacity;
-var dropInDate;
-var machineNumber;
-var position;
-var dropOffDate;
-$('input').on("click",function(){
-	clothesType = $("input[name='check']:checked").val();
-	detergent = $("input[name='detergent']:checked" ).val();
-	machineCapacity = $("input[name='capacity']:checked" ).val();
-	console.log(machineCapacity)
-	console.log(clothesType)
-	console.log(detergent)
+// var clothesType;
+// var detergentType;
+// var machineCapacity;
+// var dropInDate;
+// var machineNumber;
+// var position;
+// var dropOffDate;
+// //  $('input').on("click",function(){
+// // 	 clothesType = $("input[name='check']:checked").val() + ", ";
+// // 	 return clothesType;
+// // })
 
-})
+//   $('input').on("click",function(){
+// 	detergentType= $("input[name='detergent']:checked").val();
+// })
+// $('input').on("click",function(){
+// 	machineCapacity= $("input[name='capacity']:checked").val();
+// })
+
+// function InformationService (){
+// 	var info ={};
+// 	info.clothesType = clothesType;
+// 	info["Type of detergent"] =detergent;
+// 	info["Machine Capacity"] = machineCapacity;
+// 	info["DropIn Date"]
+// 	info["Machine Number"] = machineNumber;
+// 	info.["Location"] = position;
+// 	info.["DropOff Date"] = dropOffDate;
+
+// 	return info;
+// }
+
+// var clothesType = function(){
+// 	$('input').on("click",function(){
+// 		console.log($("input[name='check']:checked").val();
+// 		return $("input[name='check']:checked").val();
+// 	})
+// }
+
+
+
+// // function userInformation (){
+
+// // }
+
+
+// function total (){
+
+// 	machineCapacity*detergentType*+ 5
+// }
