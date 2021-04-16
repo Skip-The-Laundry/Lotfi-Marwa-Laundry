@@ -57,7 +57,7 @@
 
 <div id="E-mail">
 <p style="font-size: 20px; transform: translateX(15%); width:200px; color: #3c6382;font-weight:bold;";>E-mail adress</p>
-<input style="background-color: transparent;" type="email" placeholder="Enter you E-mail adress">
+<input id ="email" style="background-color: transparent;" type="email" placeholder="Enter you E-mail adress">
 </div>
 
    <div id="number">
@@ -72,7 +72,7 @@
 
       <div id="password">
       <p style="font-size: 20px; transform: translateX(25%); width:200px;color: #3c6382; font-size : 20px;font-weight:bold;">Password</p>
-      <input style="background-color: transparent;" type="password" placeholder="Enter your password" >
+      <input id="password1" style="background-color: transparent;" type="password" placeholder="Enter your password" >
       </div>
 
       <p id="student1" style="font-size : 17px; font-family :sans-serif ; color: white;  top: 20px;transform: translateX(1%); font-size: 30px; color: #3B5998;font-weight:bold; text-align: center;"> Are you a student?  </p>
@@ -139,22 +139,22 @@
        <div class="container1"> <h2 id="titleBox">You are in the process to book a machine</h2> 
       <div>
       <h3 class="box1"> Type Of Clothes</h3>
-        <label><input type="checkbox" name="check" value="Whites" > Whites</label>
-        <label><input type="checkbox" name="check" value="LightColours"> Light colours</label>
-        <label><input type="checkbox" name="check" value="DarkColours"> Dark colours</label>
-        <label><input type="checkbox" name="check" value="Delicates"> Delicates (wools, silks etc)</label>
+        <label><input type="checkbox" name="check" id="Whites" > White</label>
+        <label><input type="checkbox" name="check" id="LightColours"> Light colours</label>
+        <label><input type="checkbox" name="check" id="DarkColours"> Dark colours</label>
+        <label><input type="checkbox" name="check" id="Delicates"> Delicates (wools, silks etc)</label>
       </div>
       <div>
       <h3 class="box1"> Type Of Detergents</h3>
-        <input type="radio" name="detergent" id="d1" value="Powder">  <label for="d1"> Powder </label>
+        <input type="radio" name="detergent" id="d1" value ="Powder">  <label for="d1"> Powder </label>
         <input type="radio" name="detergent" id="d2" value="Liquid"> <label for="d2"> Liquid </label>
         <input type="radio" name="detergent"id="d3" value="Pods"> <label for="d3"> Pods </label>
       </div>
       <div>
       <h3 class="box1"> Machine Capacity</h3>
-        <input type="radio" name="capacity" id="name" value="7kg">  <label for="name"> 7Kg </label>
-        <input type="radio" name="capacity" id="name1" value="10kg"> <label for="name1"> 10Kg </label>
-        <input type="radio" name="capacity"id="name2" value="15kg"> <label for="name2"> 15kg </label>
+        <input type="radio" name="capacity" id="name" value="7">  <label for="name"> 7Kg </label>
+        <input type="radio" name="capacity" id="name1" value="10"> <label for="name1"> 10Kg </label>
+        <input type="radio" name="capacity"id="name2" value="15"> <label for="name2"> 15kg </label>
       </div>
       <div>
         <h3 class="box1">Choose Date & Time</h3>
@@ -190,6 +190,8 @@
       </div>
       <div><button id="total">Total</button></div>
       <div><button id="btnPayment">Proceed to payment</button></div>
+      <input id="price"> 
+     
       <img id="yesLogo"src="Laundry/lotfilogo.png">
      </div>
     </div>
@@ -200,7 +202,7 @@
 
 </div>
 
-
+ <img id="QR" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS0ByWRWzGSWtLp6O09WZk4vj3dWbyRL790g&usqp=CAU">
 
 
 
@@ -209,7 +211,7 @@
 <script type="text/javascript">	
 
 $("#marwa").hide()
-
+$("#QR").hide()
 
 
 
@@ -233,6 +235,7 @@ $("#marwa").hide()
 signUp()
 logIn()
 next()
+
 
 $("#about").click(function(){
 	$("#btn1").hide()
@@ -261,14 +264,127 @@ $("#btn3").click(function(){
 	
 	$("#firstpage").hide()
 	$("html").css({"background":"none"})
- $("#logo1").hide()
+    $("#logo1").hide()
     $("#marwa").show()
-    
 	
-	
-
 })
 
+// function checkTypeProduct (){
+// 	$('input').on("click",function(){
+// 	var detergentType= $("input[name='detergent']:checked").val();
+// 	return detergentType;
+
+// })}
+
+
+
+var objet = {};
+
+function checkAll (){
+	var count=0
+ if ($('#Whites').prop("checked")){
+	count++ ;
+}
+  if ($('#LightColours').prop("checked")){
+	count++;
+}
+
+ if ($('#DarkColours').prop("checked")){
+	count++;
+}
+ if ($('#Delicates').prop("checked")){
+	count++;
+}
+
+return count
+
+}
+
+var detergentType
+$('input').on("click",function(){
+	detergentType= $("input[name='detergent']:checked").val();
+})
+var capacity
+$('input').on("click",function(){
+	capacity= $("input[name='capacity']:checked").val();
+})
+
+
+function discount(){
+student= $("#check1").prop("checked")
+return student}
+
+discount()
+
+var obj={
+	1: 1,
+	2: 1.03,
+	3:1.05,
+	4:1.07
+} 
+
+var typeofdetergent={
+	Powder: 1,
+	Liquid:1.05,
+	Pods:1.07
+
+}
+
+
+function total (){
+
+	var total=0
+	if (+capacity == 7){
+ total= +capacity * 3 
+}
+console.log(total)
+ if (+capacity == 10){
+ total= +capacity * 2.5
+}
+console.log(total)
+
+if (+capacity == 15){
+ total= +capacity * 2.5 
+}
+console.log(total)
+
+
+for (var key in obj){
+	if (key=== checkAll()){
+    total=total*obj.key
+	}
+}
+console.log(total)
+
+for (var key in typeofdetergent){
+	if (key===detergentType){
+		total*=typeofdetergent[key]
+	}
+}
+
+
+if(discount()=== true){
+	total*=0.8
+}
+total+= 5
+return total
+}
+
+total()
+
+$("#total").click(function(){
+	$("#price").val(total())
+
+})
+$("#btnPayment").click(function(){
+	$("#price").hide();
+	$("#total").hide();
+	$("#btnPayment").hide();
+	$("#position").hide();
+	$(".myContainer").hide();
+	$("#QR").show()
+
+})
 
 
 

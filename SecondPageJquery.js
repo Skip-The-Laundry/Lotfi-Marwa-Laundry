@@ -11,6 +11,7 @@ $("#btnBook").click(function(){
 $("#nextBtn").click(function(){
 	$(".container1").hide();
 	$("#forthPage").show();
+
 })
 
 $("#goBack").click(function(){

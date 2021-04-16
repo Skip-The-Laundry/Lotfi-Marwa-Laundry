@@ -1,3 +1,6 @@
+
+
+
 function signUp(){ 
 $("#btn2").click(function(){
 	$("#student").show()
@@ -51,6 +54,13 @@ $("#btn4").click(function(){
     $("#btn3").css({"transform": "translateY(-950px)"})
 
 })}
+
+// function Usersignin(email,password){
+//  var obj={
+//  	email : email,
+//  	password: password,
+//  }
+// }
 
 
 
