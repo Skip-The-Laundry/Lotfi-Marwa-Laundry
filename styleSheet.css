@@ -1,0 +1,307 @@
+
+.topnav {
+  overflow: hidden;
+  background-color: #3DC1D3;
+  color:white;
+  opacity: 0.8;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  	
+}
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+#input{
+	
+  position: absolute;
+  top:22px;
+  left: 1200px;
+  width: 200px;
+  height: 20px;
+}
+
+#submit:hover{
+background-color: #2C3A47;
+}
+#submit {
+	background-color:#FFBE76; 
+	color:white;
+	font-size: 17px
+}
+
+#btnBook{
+	transform:translate(320%, -160%);
+	border:none;
+	width:200px;
+	height:70px;
+	background-color:#2C3A47;
+	letter-spacing: 1.5px;
+	color:white;
+	cursor:pointer;
+}
+
+#btnBook:hover {
+	background-color: #ff4757;
+}
+
+.column{
+	float:left;
+	padding:5px;
+	width :50px;
+	margin-right:50px;
+}
+#text {
+	text-align: center;
+	padding-top:0px;
+}
+
+#contactUs{
+	text-align:right;
+	padding-top:-20px;
+}
+
+#logo{
+	width:43px;
+	background-color:white;
+	border-radius:5px;
+}
+
+#bare{
+	background-color: #3dc1d3;
+	opacity:0.8;
+	padding:10px;
+	box-shadow:0px 3px;
+}
+
+#slogan{
+	text-transform:uppercase;
+	font-size:40px;
+	color:white;
+}
+
+#imageContainer{
+	padding-top:5px;
+}
+#firstImage{
+	width:1503px;
+	height:450px
+}
+
+#container{
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	background-color:#3dc1d3;
+	width:750px;
+	text-align:center;
+	box-shadow:0px 1px;
+	border-radius:2px;
+}
+
+#afterSlogan{
+	text-transform:uppercase;
+	padding-top:-30px;
+}
+
+#footer{
+   transform: translateY(50%);
+    font-size: 17px ;
+   color: #FFC0CB;
+    height: 150px;
+    font-family: 'sans cherif';
+    text-align: center;
+    width: 100%;	
+    background-color: #2C3A47;
+	color : white;
+	bottom :0;
+	top:-100px;
+}
+
+.fa {
+  padding: 21px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+
+}
+
+.fa:hover{
+	opacity : 0.8;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #ff6b81;
+  color: white;
+}
+.fa-linkedin {
+  background: #0072b1;
+  color: white;
+}
+
+#thirdpageImage {
+	opacity:0.8;
+	position: relative;
+	top:15px;
+	left :50px;
+	width : 1400px;
+	height: 1000px;
+
+} 
+
+.container1 {
+	position:absolute;
+	top:75%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	background-color:rgba(200, 214, 229,0.75);
+	width:600px;
+	text-align:center;
+	box-shadow:0px 1px;
+	border-radius:2px;
+	height: 550px;
+}
+
+#nextBtn{
+	border:none;
+	width:112px;
+	height: 25px;
+	font-family: Georgia, serif;
+	font-size: 18px;
+	position: relative;
+	top : 35px;
+	background-color :#2C3A47;
+	color : white;
+	cursor: pointer;
+}
+
+#nextBtn:hover {
+	background-color: #ff4757;
+}
+
+.box1 {
+	font-family:Georgia, serif;
+	position: relative;
+	color:#2c2c54;
+	opacity: 0.9;
+
+}
+#titleBox {
+	font-size : 30px;
+	color :#130f40;
+	opacity: 0.85;
+}
+
+.slected {
+	border:none;
+	width:150px;
+	background-color: rgba(200, 214, 229,1);
+}
+
+
+.slected:hover {
+	background-color: white;
+}
+
+#ThirdPage {
+	display: none;
+}
+#forthPage {
+	display: none;
+}
+
+#position{
+	border:none;
+	width:220px;
+	background-color: white;
+}
+
+.myContainer{
+	position :relative;
+	top:45px;
+}
+
+#total{
+	position: relative;
+	top:80px;
+	border:none;
+	width:120px;
+	background-color:#ff4757;
+	color:white;
+	border-radius: 3px;
+	height: 35px;
+	font-family:Georgia, serif;
+	font-size:20px;
+}
+
+#total:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#btnPayment{
+	position: relative;
+	top:110px;
+	border:none;
+	width:200px;
+	background-color:#2C3A47;
+	color:white;
+	border-radius: 3px;
+	height: 30px;
+	font-family:Georgia, serif;
+	font-size:15px;
+}
+
+#btnPayment:hover {
+	background-color: #ff4757;
+}
+
+#yesLogo{
+	width:200px;
+	position: relative;
+	top:160px;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  position: relative;
+  top:10px;
+  right:264px;
+  border : none;
+}
+
+#goBack:hover{
+  background-color: #2C3A47;
+  color: white;
+}
+
+
+
