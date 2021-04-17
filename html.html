@@ -402,7 +402,7 @@ if(discount()=== true){
 	total*=0.8
 }
 total+= 5
-total.toFixed(3)
+total = total.toFixed(3)
 return total
 }
 
@@ -415,6 +415,10 @@ $("#total").click(function(){
 $("#btnPayment").click(function(){
 	if($("#dropOff1").val()===""){
 		alert("Choose a date")
+	}
+	var y=dateDropOff.split("T");
+	if(y[0]<dateStr){
+		alert("Look at the calendar !")
 	}
 	else {
 	$("#price").hide();

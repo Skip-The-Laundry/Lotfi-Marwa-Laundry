@@ -13,6 +13,10 @@ $("#nextBtn").click(function(){
 || $("input[name='capacity']:checked").val() === undefined || $('#myDate').val() === "" || $('#machineNumber').val()===""){
 		alert("Please fill in the information below")
 	}
+	var x = dateDropIn.split("T");
+	if(x[0]<dateStr){
+		alert("Look at the calendar !")
+	}
 	else {
 	$(".container1").hide();
 	$("#forthPage").show();}
@@ -26,7 +30,7 @@ $("#goBack").click(function(){
 })
 
  
-function date(dateDropOff,dateDropIn){
+function mydate(dateDropOff,dateDropIn){
 	var x =dateDropOff.split("T");
 	var y = dateDropIn.split("T");
 	if(x[0] === y[0]){
@@ -35,17 +39,32 @@ function date(dateDropOff,dateDropIn){
 	return false;
 }
 	var dateDropIn=$("#myDate").val();
-	var dateDropOff =$("#dropOff1").val()
-	
+	var dateDropOff =$("#dropOff1").val();
+	var d = new Date();
+    var date = d.getDate();
+    var month = d.getMonth() + 1; 
+    var year = d.getFullYear();
+    var dateStr = year + "-" + "0"+month + "-" + date;
 
 $("#myDate").change(function(){
 	dateDropIn = $("#myDate").val();})
 $("#dropOff1").change(function(){
 	dateDropOff = $("#dropOff1").val();
-	if(date(dateDropIn,dateDropOff) === true){
+	if(mydate(dateDropIn,dateDropOff) === true){
 		alert("The delivery is made after 24 hours, choose another Date")
 	}
 })
+
+
+
+
+
+
+
+
+
+
+
 
 
 // var clothesType = $("input[name='check']:checked" ).val();
