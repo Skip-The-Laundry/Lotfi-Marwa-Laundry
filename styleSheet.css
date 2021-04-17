@@ -269,7 +269,7 @@ background-color: #2C3A47;
 
 #btnPayment{
 	position: relative;
-	top:110px;
+	top:140px;
 	border:none;
 	width:200px;
 	background-color:#2C3A47;
@@ -288,6 +288,7 @@ background-color: #2C3A47;
 	width:200px;
 	position: relative;
 	top:160px;
+	right:70px;
 }
 .previous {
   background-color: #f1f1f1;
@@ -303,5 +304,34 @@ background-color: #2C3A47;
   color: white;
 }
 
+#QR{
+	width: 320px;
+	position: relative;
+	left:595px;
+	bottom: 650px
 
+}
 
+#price {
+	border:none;
+	background-color:rgba(200, 214, 229,0.75);
+	text-align : center;
+	position: relative;
+	top:-60px;
+	left : 100px;
+
+}
+
+#QrPay {
+	position:relative;
+	bottom: 630px;
+	left : 655px;
+}
+
+#clickme {
+	position:relative;
+	bottom: 640px;
+	left : 720px;
+	border:none;
+
+}

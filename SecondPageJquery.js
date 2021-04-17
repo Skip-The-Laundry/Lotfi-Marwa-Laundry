@@ -9,14 +9,42 @@ $("#btnBook").click(function(){
 })
 
 $("#nextBtn").click(function(){
+	if($("input[name='check']:checked").val() === undefined || $("input[name='detergent']:checked").val() ===undefined
+|| $("input[name='capacity']:checked").val() === undefined || $('#myDate').val() === "" || $('#machineNumber').val()===""){
+		alert("Please fill in the information below")
+	}
+	else {
 	$(".container1").hide();
-	$("#forthPage").show();
+	$("#forthPage").show();}
 
 })
 
 $("#goBack").click(function(){
 	$(".container1").show();
 	$("#forthPage").hide();
+	$("#QR").hide();
+})
+
+ 
+function date(dateDropOff,dateDropIn){
+	var x =dateDropOff.split("T");
+	var y = dateDropIn.split("T");
+	if(x[0] === y[0]){
+		return true;
+	}
+	return false;
+}
+	var dateDropIn=$("#myDate").val();
+	var dateDropOff =$("#dropOff1").val()
+	
+
+$("#myDate").change(function(){
+	dateDropIn = $("#myDate").val();})
+$("#dropOff1").change(function(){
+	dateDropOff = $("#dropOff1").val();
+	if(date(dateDropIn,dateDropOff) === true){
+		alert("The delivery is made after 24 hours, choose another Date")
+	}
 })
 
 

@@ -34,9 +34,13 @@ function logIn(){
 	})
 }
 
-function next(){ 
-$("#btn4").click(function(){
 
+function next(){
+$("#btn4").click(function(){
+	if (!$("#check1").prop("checked") && !$("#check2").prop("checked")){
+		alert("Please choose one of the options")
+	}
+else{
     $("#student1").hide()
 	$("#student").hide()
 	$("#adress").show()
@@ -51,9 +55,30 @@ $("#btn4").click(function(){
     $("#E-mail").show()
     $("#password").show()
     $("#box").css( {"transform": "translateY(-50%)"})
-    $("#btn3").css({"transform": "translateY(-950px)"})
-
+    $("#btn3").css({"transform": "translateY(-950px)"})}
 })}
+
+
+// function next(){ 
+// $("#btn4").click(function(){
+
+//     $("#student1").hide()
+// 	$("#student").hide()
+// 	$("#adress").show()
+// 	$("#btn1").hide()
+// 	$("#btn2").hide()
+// 	$("#btn4").hide()
+// 	$("#btn3").show()
+//     $(".check").hide()
+// 	$("#first").show()
+// 	$("#fullName").show()
+//     $("#number").show()
+//     $("#E-mail").show()
+//     $("#password").show()
+//     $("#box").css( {"transform": "translateY(-50%)"})
+//     $("#btn3").css({"transform": "translateY(-950px)"})
+
+// })}
 
 // function Usersignin(email,password){
 //  var obj={

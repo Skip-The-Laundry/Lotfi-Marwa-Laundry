@@ -49,7 +49,7 @@ html{
 	
   position: absolute;
   top:22px;
-  left: 940px;
+  left: 1200px;
   width: 200px;
   height: 20px;
  
@@ -68,50 +68,55 @@ html{
 
 #btn1{
 	background-color: #ffbe76;
-	transform: translateY(-900px);
+	transform: translateY(-1090px);
  display: block;
 position: center;
   margin-left: auto;
   margin-right: auto;
   width: 15%;
-  height: 20px;
+  height: 40px;
   opacity: 1.2;
-   border-radius: 2px;
+   border-radius: 7px;
    margin-bottom: auto;
    margin-top: auto;
+   border:none;
+
 }
 #btn2{
 	background-color: #ffbe76;
-	transform: translateY(-840px);
+	transform: translateY(-1030px);
 	
 	 padding: auto;
- display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 15%;
-  height: 25%;
+  height: 40px;
   opacity: 1.2;
-   border-radius: 2px;
+   border-radius: 7px;
      margin-bottom: auto;
    margin-top: auto;
+   border:none;
 }
 #btn3{
 	background-color: #ffbe76;
-	transform: translateY(-960px);
+	transform: translateY(-1140px);
 	 padding: auto;
- display: block;
-  margin-left: auto;
+  display: block;
+  position :relative;
+  margin-left: 687px;
   margin-right: auto;
-  width: 10%;
+  width: 9%;
   height: 25%;
   opacity: 1.2;
    border-radius: 2px;
      margin-bottom: auto;
    margin-top: auto;
 }
+
 #btn4{
 	background-color: #ffbe76;
-	transform: translateY(-860px);
+	transform: translateY(-1030px);
 	 padding: auto;
  display: block;
   margin-left: auto;
@@ -142,37 +147,39 @@ position: center;
 }
 
 #fullName{
-	transform: translateX(150%);
-	 top: 20px;
+	transform: translateX(220%);
+	 top: -10px;
 	 width:100px;
 }
 #E-mail{
-	transform: translateX(150%);
-	 top: 20px;
+	transform: translateX(220%);
+	 top: -34px;
 	 width:100px;
 }
 #number{
-	transform: translateX(150%);
-	 top: 20px;
+	transform: translateX(220%);
+	 top: -10px;
 	 width:100px;
 }
 #adress{
-	transform: translateX(150%);
-	 top: 20px;
+	transform: translateX(220%);
+	 top: -10px;
 	 width:100px;
 
 }
 #password {
-	transform: translateX(150%);
-	 top: 20px;
+	transform: translateX(220%);
+	 top: -10px;
 	 width:100px;
 
 } 
 .check{
 	font-size : 8px; 
 	font-family :sans-serif ; 
-	color: white;  top: 20px;
-	transform: translateX(1%); 
+	color: white;  
+	/*transform: translateX(1500%); */
+  position:relative;
+  top :-160px;
 	font-size: 30px; 
 	color: #3B5998;
 	font-weight:bold; 

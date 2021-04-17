@@ -30,6 +30,7 @@
 
 </div>
 <img id="logo1" src="Laundry/lotfilogo.png">
+
  <input id="input" type="text" placeholder="Search...">
 
 	<div id="firstpage">
@@ -39,10 +40,10 @@
 
 
 <div id="box">
-<p  id="first" style="font-size : 17px; font-family :sans-serif ; color: white;  top: 20px;transform: translateX(1%); font-size: 30px; color: #3B5998;font-weight:bold;"  > Please fill in all information below <p>
+<p  id="first" style="font-size : 17px; font-family :sans-serif ; color: white;  top: 20px;transform: translateX(12%); font-size: 30px; color: #3B5998;font-weight:bold;"  > Please fill in all information below <p>
 
 
-	<p  id="aboutus" style="font-size : 17px;text-align: center; font-family :sans-serif ; color: white;  top: 20px;transform: translateX(1%); font-size: 30px; color: #3B5998;font-weight:bold;"  > About us <p id="AU" style="text-align: center; font-size :17px; font-family: sans-serif; color: black">  Skip the laundry is a service offred by different laundry shops where customers can benefit from drop-off and delivery of their clothes washed and dried. We offer a competitive prices and high quality service. </p>
+	<p  id="aboutus" style="font-size : 17px;text-align: center; font-family :sans-serif ; color: white;  top: 20px;transform: translateX(1%); font-size: 29px; color: #3B5998;font-weight:bold;"  > About us <p id="AU" style="text-align: center; font-size :17px; font-family: sans-serif; color: black">  Skip the laundry is a service offred by different laundry shops where customers can benefit from drop-off and delivery of their clothes washed and dried.<br> We offer a competitive prices and high quality service.</br> </p>
 	<p>
 
 	<p  id="ContactUs" style="font-size : 17px;text-align: center; font-family :sans-serif ; color: white;  top: 20px;transform: translateX(1%); font-size: 30px; color: #3B5998;font-weight:bold;"  > Contact us  <p id="cu" style="text-align: center; font-size :17px; font-family: sans-serif; color: black">  +216 22 55 55 55 <img id="flag" src="laundry/tn.svg"></p>
@@ -52,26 +53,26 @@
   
  <div id="fullName">
    <p style="font-size: 20px; transform: translateX(40%);width:100px;color: #3c6382;font-weight:bold;">Full name</p>
-   <input  style="background-color: transparent;" type="text" placeholder="Enter full name" id="yourGender" class="designBtn"  onchange="getValue()" required>
+   <input id="Fname"  style="background-color: transparent;" type="text" placeholder="Enter full name" id="yourGender" class="designBtn" required>
  </div>
 
 <div id="E-mail">
-<p style="font-size: 20px; transform: translateX(15%); width:200px; color: #3c6382;font-weight:bold;";>E-mail adress</p>
-<input id ="email" style="background-color: transparent;" type="email" placeholder="Enter you E-mail adress">
+<p style="font-size: 20px; transform: translateX(12%); width:200px; color: #3c6382;font-weight:bold;";>Address mail</p>
+<input id ="email" style="background-color: transparent;" type="email" placeholder="Enter you Address mail">
 </div>
 
    <div id="number">
-   <p style="font-size: 20px; transform: translateX(16%); width:200px;color: #3c6382;font-weight:bold;" >Phone number</p>
-   <input style="background-color: transparent;" type="tel" placeholder="+216 XX XXX XXX">
+   <p style="font-size: 20px; transform: translateX(12%); width:200px;color: #3c6382;font-weight:bold;" >Phone number</p>
+   <input id="phone" style="background-color: transparent;" type="tel" placeholder="+216 XX XXX XXX">
    </div>
 
       <div id="adress">
-      <p style="font-size: 20px; transform: translateX(30%); width:200px;color: #3c6382; font-size : 20px;font-weight:bold;">Adress</p>
-      <input style="background-color: transparent;" type="adress" placeholder="Adress@gmail.com" >
+      <p style="font-size: 20px; transform: translateX(25%); width:200px;color: #3c6382; font-size : 20px;font-weight:bold;">Address</p>
+      <input id="location" style="background-color: transparent;" type="adress" placeholder="Enter your Adress" >
       </div>
 
       <div id="password">
-      <p style="font-size: 20px; transform: translateX(25%); width:200px;color: #3c6382; font-size : 20px;font-weight:bold;">Password</p>
+      <p style="font-size: 20px; transform: translateX(18%); width:200px;color: #3c6382; font-size : 20px;font-weight:bold;">Password</p>
       <input id="password1" style="background-color: transparent;" type="password" placeholder="Enter your password" >
       </div>
 
@@ -91,6 +92,7 @@
  <button id="btn2" style="font-weight: bold"> Sign-up</button>
  <button id="btn3" style="font-weight: bold" > Submit </button>
  <button id="btn4" style="font-weight: bold"> Next </button>
+
 
   </div>
 
@@ -124,7 +126,7 @@
   <div class="column"> <img style="margin-left:50px;width:700px" src="Laundry/etape.png" alt="bag of clothes"> </div>
   
 <div id="#video">
-  <video style="margin-right:405px;width:600px;margin-left:99px;padding-top :60px;" controls>
+  <video style="margin-right:405px;width:600px;margin-left:99px;padding-top :50px;" controls>
     <source src="Laundry/videolaundry.mp4" type="video/mp4">
   </video>
 </div>
@@ -164,7 +166,7 @@
       <div>
         <h3 class="box1">Machine Available</h3>
         <label for ="Machine"></label>
-        <select onchange="values()"class ="slected" id="machineNumber"required>
+        <select class ="slected" id="machineNumber"required>
           <option  value=""></option>
           <option  value="Machine1">Machine 1</option>
           <option  value="Machine2">Machine 2</option>  
@@ -181,7 +183,7 @@
      <div id="forthPage" class="container1">
       <button id="goBack" class="previous round">&#8249;</button>
       <div class="myContainer">
-        <h3 class="box1">Select Position</h3>
+        <h3 class="box1">Select Adresse</h3>
         <label><input type="text" placeholder="Adresse..." id="position" required></label>
       </div>
       <div class="myContainer">
@@ -203,18 +205,20 @@
 </div>
 
  <img id="QR" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS0ByWRWzGSWtLp6O09WZk4vj3dWbyRL790g&usqp=CAU">
+ <p id ="QrPay">Scan your Qr code for payment </p>
+ <button id="clickme">Click me</button>
+ <div id="resultmessage"style="text-align: center; font-family :'Courier New',monospace ; color: white; position:relative; bottom: 600px;color:black ;background-color:rgba(200, 214, 229,0.8);box-shadow:0px 1px;margin-left:500px;margin-right:90px;height:200px;width:480px;padding-top:40px;"><p style="text-align: center; font-size: 18px;padding-top:30px;font-weight:bold;"id ="final"></p></div>
 
 
 
-
-
+<div class="gcse-search"></div>
+<script async src="https://cse.google.com/cse.js?cx=e42646e01da4e79c0"></script>
 <script type="text/javascript">	
-
-$("#marwa").hide()
-$("#QR").hide()
-
-
-
+	$("#resultmessage").hide()
+    $("#marwa").hide()
+    $("#QR").hide()
+    $("#QrPay").hide()
+    $("#clickme").hide()
 	$("#ContactUs").hide()
 	$("#cu").hide()
 	$("#flag").hide()
@@ -224,6 +228,7 @@ $("#QR").hide()
 	$("#student1").hide()
 	$("#student").hide()
 	$("#btn3").hide()
+	$("#btn6").hide()
 	$("#btn4").hide()
 	$("#password").hide()
     $("#first").hide()
@@ -260,14 +265,44 @@ $("#CU").click(function(){
 	$("#box").css( {"transform": "translateY(-70%)"})
 
 })
-$("#btn3").click(function(){
-	
+
+function submit(){
+	 $("#btn3").click(function(){
+	 	if ($("#email").val()==="" || $("#Fname").val()==="" ||
+    	 $("#phone").val()==="" ||  $("#location").val()==="" ||
+    	  $("#password1").val()==="") {
+    	 		alert("Please enter all required information")
+    	 	}
+    	 else if (typeof $("#phone").val() !== "number" && $("#phone").val().length<8){
+    	 	alert("Please enter a valide phone number")
+    	 }
+    	 else if ($("#password1").val().length < 8){
+    	 	alert("Your password is weak :sanglot:")
+    	 }
+	else {
 	$("#firstpage").hide()
 	$("html").css({"background":"none"})
     $("#logo1").hide()
     $("#marwa").show()
+   	
+}})}
+submit();
+
+
+// $("#btn3").click(function(){
 	
-})
+// 	$("#firstpage").hide()
+// 	$("html").css({"background":"none"})
+//     $("#logo1").hide()
+//     $("#marwa").show()
+	
+// })
+// $("#btn6").click(function(){
+// 	$("#firstpage").hide()
+// 	$("html").css({"background":"none"})
+//     $("#logo1").hide()
+//     $("#marwa").show()
+// })
 
 // function checkTypeProduct (){
 // 	$('input').on("click",function(){
@@ -367,25 +402,43 @@ if(discount()=== true){
 	total*=0.8
 }
 total+= 5
+total.toFixed(3)
 return total
 }
 
 total()
 
 $("#total").click(function(){
-	$("#price").val(total())
+	$("#price").val(total() + " dinar")
 
 })
 $("#btnPayment").click(function(){
+	if($("#dropOff1").val()===""){
+		alert("Choose a date")
+	}
+	else {
 	$("#price").hide();
 	$("#total").hide();
 	$("#btnPayment").hide();
 	$("#position").hide();
+	$("#yesLogo").hide();
 	$(".myContainer").hide();
-	$("#QR").show()
+	$("#QR").show();
+	$("#QrPay").show();
+	$("#clickme").show();
+	$("#goBack").hide();}
 
 })
 
+$("#clickme").click(function(){
+	$("#QrPay").hide();
+	$("#QR").hide();
+	$("#clickme").hide();
+	$(".container1").hide();
+	$("#resultmessage").show()
+	$("#final").append( "Mr/Ms " + $("#Fname").val()+", you booked "+ $("#machineNumber.slected").val()+ " on the "+ $("#myDate.slected").val()+ ". The total to be paid is equal to "+ total() +" dinar"+ ". The delivery will take place in " + $("#dropOff1").val() + "." ) 
+	$("#final").css({"text-align": "center"})
+})
 
 
 </script>
